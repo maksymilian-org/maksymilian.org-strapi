@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_tasks_tasks",
+  "info": {
+    "displayName": "tasks",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    }
+  }
+}
