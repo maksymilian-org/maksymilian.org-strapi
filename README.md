@@ -36,6 +36,41 @@ yarn build
 
 Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
 
+### `fly.io`
+
+1. [Install `flyctl`](https://fly.io/docs/hands-on/install-flyctl/)
+2. Login to Fly: 
+```
+fly auth login
+```
+
+3. Create the Fly project
+```
+fly launch
+
+# Would you like to setup a Postgresql database now? Yes
+```
+
+4. Attach Postgres to the Strapi app
+```
+# copy DATABASE_URL=postgres... line into .env
+```
+
+5. Deploy to fly
+```
+fly deploy
+```
+
+## Update the Strapi project
+```
+yarn develop
+```
+
+After you make the changes and you are sure they work, re-deploy your app.
+```
+fly deploy
+```
+
 ## 📚 Learn more
 
 - [Resource center](https://strapi.io/resource-center) - Strapi resource center.
