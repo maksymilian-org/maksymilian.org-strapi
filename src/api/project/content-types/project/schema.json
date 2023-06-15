@@ -64,7 +64,7 @@
       },
       "type": "string"
     },
-    "link": {
+    "links": {
       "displayName": "Link",
       "type": "component",
       "repeatable": true,
